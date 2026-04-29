@@ -5,6 +5,13 @@ import asyncio
 import logging
 from datetime import datetime, time, timedelta
 
+from dotenv import load_dotenv
+load_dotenv()
+
+print("BOT_TOKEN =", os.getenv('BOT_TOKEN'))
+print("CHANNEL_ID =", os.getenv('CHANNEL_ID'))
+print("UNSPLASH_ACCESS_KEY =", os.getenv('UNSPLASH_ACCESS_KEY'))
+
 from telegram import Bot
 from telegram.error import TelegramError
 
